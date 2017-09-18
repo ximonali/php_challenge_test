@@ -25,3 +25,7 @@ several state changes, or thousands. They are not necessarily in order. An objec
 never entered into a RUNNING state. A COMPLETE state can be treated just as PAUSED, i.e.
 the object is NOT running. No guarantees that once an object enters into a COMPLETE state,
 that it won't then go back into RUNNING!.
+
+The method should take the array of states, an optional start, and an optional stop as
+parameters, returning the number of seconds within RUNNING state. Use constants for the
+three states so they can easily be changed to match our tests.
